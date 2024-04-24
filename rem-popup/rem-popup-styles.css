@@ -1,0 +1,103 @@
+:root {
+	--primary-color: #425b84;
+	--secondary-color: #5b7bb4; /* hsl(218, 33%, 39%) */
+	--max-width: 1100px;
+	--mypopup-background-color: hsl(218, 33%, 30%);
+}
+body {
+	font: normal 1rem/1.5 'Arial', sans-serif;
+	background: var(--primary-color);
+	color: #fff;
+	overflow-x: hidden;
+	padding-bottom: 50px;
+}
+
+#main-header {
+	background: var(--secondary-color);
+	padding: 2rem 0;
+}
+
+.container {
+	max-width: var(--max-width);
+	margin: 0 auto;
+	text-align: center;
+}
+
+.playpen-linkbak {
+	color: cyan;
+	text-decoration: none;
+	background-color: #999;
+	padding: 3px 7px;
+	border-radius: 4px;
+	transition: all 0.75s ease-in-out;
+}
+
+.playpen-linkbak:hover {
+	color: red;
+	font-size: 1.21rem;
+}
+
+/* **************END PLAYPEN BOILERPLATE ************** */
+/* **************       BEGIN POPUP      ************** */
+.wrapper {
+	max-width: var(--max-width);
+	margin-inline: auto;
+	padding: 1rem;
+	margin-top: 2rem;
+	border: 1px solid #b80;
+}
+
+.mybutton {
+	display: block;
+	/*   min-height: 1rem; */
+	cursor: pointer;
+	width: 180px;
+	margin: 10px auto;
+	font-size: 2em;
+	text-align: center;
+	/* */
+	border-radius: 5px;
+	background-color: #aaa;
+	/* background-image: radial-gradient(red 5%, yellow 15%, #e61 60%); */
+	background-image: radial-gradient(#e60 1%, rgb(200, 200, 0) 35%, #e61 90%);
+}
+
+.mybutton:hover {
+	background-image: radial-gradient(#b90 5%, rgb(220, 180, 0) 15%, #a41 60%);
+}
+#openpop {
+	margin-top: 1.5rem;
+	cursor: pointer;
+}
+
+.mypopup {
+	width: 90%;
+	height: 0;
+	border-radius: 10px;
+	padding: 0.5rem 1rem 0;
+	background-color: var(--mypopup-background-color);
+	border: 2px solid #b80;
+	/*   margin-inline: auto; */
+	margin: 0 auto;
+	transition: all 100ms linear;
+	opacity: 0.08;
+	transform: scale(0);
+	/*   transform: translate(-200px, 200px); */
+	/* display: none; */
+}
+
+.mypopup p {
+	margin-bottom: 0.5rem;
+}
+
+.showme {
+	/* color: red; */
+	height: auto;
+	opacity: 1;
+	transform: scale(1);
+	margin: 2rem auto;
+	/*   transform: translate(0,-4rem); */
+}
+.hideme {
+	display: none;
+}
